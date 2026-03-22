@@ -51,7 +51,6 @@ public class SecurityConfig {
 		);
 	}
 
-
 	@Bean
 	ApplicationListener<AuthenticationSuccessEvent> authSuccess() {
 		return event -> {
