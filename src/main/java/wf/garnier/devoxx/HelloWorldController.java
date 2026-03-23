@@ -27,7 +27,7 @@ public class HelloWorldController {
 				.map(OAuth2AuthenticationToken.class::cast)
 				.map(OAuth2AuthenticationToken::getPrincipal)
 				.map(OidcUser.class::cast)
-				.map(OidcUser::getFullName)
+				.map(OidcUser::getEmail)
 				.orElseGet(authentication::getName);
 	}
 }
